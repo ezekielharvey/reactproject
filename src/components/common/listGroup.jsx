@@ -8,9 +8,12 @@ const ListGroup = (props) => {
             <li
                 onClick={() => onItemSelect(item)}
                 key={item[valueProperty]}
-                className="list-group-item">{item[textProperty]}</li>
-        ))};
-    </ul>;
+                className={item === selectedItem ? "list-group-item active" : "list-group-item"}
+            >
+                {item[textProperty]}
+            </li>
+        ))}
+    </ul>
 };
 
 ListGroup.defaultProps = {
