@@ -2,7 +2,7 @@ import React from 'react';
 
 const Customers = () => {
     return (
-        <h1>Customer</h1>
+        <h1>Customers</h1>
     );
 }
 
