@@ -31,6 +31,8 @@ class LoginForm extends Component {
     console.log(errors);
     this.setState({ errors: errors || {} });
     if (errors) return;
+
+    console.log("Submitted successfully")
   };
 
   validateProperty = ({ name, value }) => {
