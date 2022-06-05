@@ -43,6 +43,10 @@ class Movies extends Component {
     this.setState({ selectedGenre: genre, currentPage: 1 });
   };
 
+  handleGenreSelect = query => {
+    this.setState({ selectedQuery: query, selectedGenre: null, currentPage: 1 });
+  }
+
   handleSort = (sortColumn) => {
     this.setState({ sortColumn });
   };
